@@ -5,8 +5,8 @@ using Microsoft.CognitiveServices.Speech.Transcription;
 class Program
 {
     // This example requires environment variables named "SPEECH_KEY" and "SPEECH_REGION"
-    static string speechKey = "a40becc3773c497f9e53fdaaff5d022a";
-    static string speechRegion = "eastus";
+    static string speechKey = Environment.GetEnvironmentVariable("SPEECH_KEY");
+    static string speechRegion = Environment.GetEnvironmentVariable("SPEECH_REGION");
 
     async static Task Main(string[] args)
     {
