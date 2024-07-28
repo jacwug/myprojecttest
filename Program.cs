@@ -31,7 +31,7 @@ class Program
                 {
                     if (e.Result.Reason == ResultReason.RecognizedSpeech)
                     {
-                        Console.WriteLine($"TRANSCRIBED: Text={e.Result.Text} Speaker ID={e.Result.SpeakerId}");
+                        Console.WriteLine($"{e.Result.SpeakerId}:{e.Result.Text}");
                     }
                     else if (e.Result.Reason == ResultReason.NoMatch)
                     {
