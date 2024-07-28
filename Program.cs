@@ -31,7 +31,7 @@ class Program
                 {
                     if (e.Result.Reason == ResultReason.RecognizedSpeech)
                     {
-                        Console.WriteLine($"{e.Result.SpeakerId}:{e.Result.Text}");
+                        Console.WriteLine($"{e.Result.SpeakerId}: {e.Result.Text}");
                     }
                     else if (e.Result.Reason == ResultReason.NoMatch)
                     {
